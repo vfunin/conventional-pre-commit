@@ -1,0 +1,14 @@
+- id: message
+  name: Conventional Commit message
+  entry: hooks/message.sh
+  language: script
+  description: Checks commit message for Conventional Commits formatting
+  always_run: true
+  stages: [commit-msg]
+- id: branch
+  name: Conventional Commit branch
+  entry: hooks/branch.sh
+  language: script
+  description: Checks branch for Conventional Commits formatting
+  always_run: true
+  stages: [commit-msg]

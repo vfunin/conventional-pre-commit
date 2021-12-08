@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+      - id: message
+        name: Conventional commit message (local)
+        entry: hooks/message.sh
+        language: script
+        stages: [commit-msg]
+      - id: branch
+        name: Conventional commit branch (local)
+        entry: hooks/branch.sh
+        language: script
+        stages: [commit-msg]
